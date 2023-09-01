@@ -3,9 +3,22 @@ languageCode = "en-us"
 title = "Your Site Titles"
 theme = "hugobook"  # The name of the theme you're using
 
-# Book configuration
+googleAnalytics = "G-0Z1CB301MH"
+
+# (Optional) If you provide a Disqus shortname, comments will be enabled on
+# all pages.
+disqusShortname = "my-site"
+
+# (Optional) Set this to true if you use capital letters in file names
 disablePathToLower = true
+
+# (Optional) Set this to true to enable 'Last Modified by' date and git author
+#  information on 'doc' type pages.
 enableGitInfo = true
+
+# (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
+# You can remove related files with config below
+disableKinds = ['taxonomy', 'taxonomyTerm']
 
 [menu]
 # [[menu.before]]
