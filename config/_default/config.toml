@@ -1,107 +1,122 @@
 baseURL = "http://nabil6391.github.io/nabilmh.hugo/"
 languageCode = "en-us"
-title = "Your Site Titles"
-theme = "hugobook"  # The name of the theme you're using
+paginate = 5
+
+title = "Nabil Mosharraf Hossain"
+theme = "Papermodx"  # The name of the theme you're using
 
 googleAnalytics = "G-0Z1CB301MH"
 
-# (Optional) If you provide a Disqus shortname, comments will be enabled on
-# all pages.
-disqusShortname = "my-site"
+[minify]
+disableXML = true
+minifyOutput = true
 
-# (Optional) Set this to true if you use capital letters in file names
-disablePathToLower = true
+# [params.cover]
+# hidden = true
+# hiddenInList = true
+# hiddenInSingle = true
 
-# (Optional) Set this to true to enable 'Last Modified by' date and git author
-#  information on 'doc' type pages.
-enableGitInfo = true
+# [params.fuseOpts]
+# isCaseSensitive = false
+# shouldSort = true
+# location = 0
+# distance = 1_000
+# threshold = 0.4
+# minMatchCharLength = 0
+# keys = [ "title", "permalink", "summary", "content" ]
 
-# (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
-# You can remove related files with config below
-disableKinds = ['taxonomy', 'taxonomyTerm']
+ [[menu.main]]
+identifier = "archive"
+ name = "Past"
+ url = "archives"
+ weight = 10
 
-[menu]
-# [[menu.before]]
-[[menu.after]]
-  name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
-  weight = 10
+ [[menu.main]]
+ identifier = "tags"
+ name = "Topics"
+ url = "tags/"
+ weight = 20
 
-[[menu.after]]
-  name = "Hugo Themes"
-  url = "https://themes.gohugo.io/hugo-book/"
-  weight = 20
+ [[menu.main]]
+ identifier = "about"
+ name = "About"
+ url = "about/"
+ weight = 30
 
+# [[menu.main]]
+# identifier = "example"
+# name = "example.org"
+# url = "https://example.org"
+# weight = 30
+
+
+  [taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
 
 [params]
-  # (Optional, default light) Sets color theme: light, dark or auto.
-  # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'light'
+env = "production"
+description = "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
 
-  # (Optional, default true) Controls table of contents visibility on right side of pages.
-  # Start and end levels can be controlled with markup.tableOfContents setting.
-  # You can also specify this parameter per page in front matter.
-  BookToC = true
+keywords = [ "Blog", "Portfolio", "PaperModX" ]
+author = "Me"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
 
-  # (Optional, default favicon.png) Set the path to a favicon file.
-  # If the favicon is /static/favicon.png then the path would be favicon.png
-  # BookFavicon = 'favicon.png'
+ShowToc = true
 
-  # (Optional, default none) Set the path to a logo for the book.
-  # If the logo is /static/logo.png then the path would be logo.png
-  # BookLogo = 'logo.png'
+TocSide = 'right'  # or 'right'
 
-  # (Optional, default none) Set leaf bundle to render as side menu
-  # When not specified file structure and weights will be used
-  # BookMenuBundle = '/menu'
+defaultTheme = "auto"
+disableThemeToggle = false
 
-  # (Optional, default docs) Specify root page to render child pages as menu.
-  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
-  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection = '*'
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+disableSpecial1stPost = false
+disableScrollToTop = false
 
-  # Set source repository location.
-  # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/alex-shpak/hugo-book'
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = true
 
-  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
-  # commit hash for 'doc' page type.
-  # Requires 'BookRepo' param.
-  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
-  # Github uses 'commit', Bitbucket uses 'commits'
-  # BookCommitPath = 'commit'
+[[params.socialIcons]]
+ [[params.socialIcons]]
+ name = "github"
+ url = "https://github.com/"
 
-  # Enable "Edit this page" links for 'doc' page type.
-  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
-  # Edit path must point to root directory of repo.
-  BookEditPath = 'edit/main/exampleSite'
 
-  # Configure the date format used on the pages
-  # - In git information
-  # - In blog posts
-  BookDateFormat = 'January 2, 2006'
+images = [ "papermod-cover.png" ]
 
-  # (Optional, default true) Enables search function with flexsearch,
-  # Index is built on fly, therefore it might slowdown your website.
-  # Configuration for indexing can be adjusted in i18n folder per language.
-  BookSearch = true
+  [params.profileMode]
+  enabled = false
+  title = "PaperMod"
+  imageUrl = "#"
+  imageTitle = "my image"
 
-  # (Optional, default true) Enables comments template on pages
-  # By default partals/docs/comments.html includes Disqus template
-  # See https://gohugo.io/content-management/comments/#configure-disqus
-  # Can be overwritten by same param in page frontmatter
-  BookComments = true
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
 
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
-  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
-  # Theme will print warning if page referenced in markdown does not exists.
-  BookPortableLinks = true
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
 
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
-  BookServiceWorker = true
-
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
-  BookTranslatedOnly = false
+  [params.homeInfoParams]
+  Title = "PaperMod"
+  Content = """
+Welcome to demo of hugo's theme PaperMod.
+- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+- Do give a 🌟 on Github !
+- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+"""
