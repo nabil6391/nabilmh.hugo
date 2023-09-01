@@ -1,4 +1,4 @@
-baseURL = "https://yourdomain.com/"
+baseURL = "http://nabil6391.github.io/nabilmh.hugo/"
 languageCode = "en-us"
 title = "Your Site Titles"
 theme = "hugobook"  # The name of the theme you're using
