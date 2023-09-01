@@ -3,7 +3,7 @@ languageCode = "en-us"
 paginate = 5
 
 title = "Nabil Mosharraf Hossain"
-theme = "Papermodx"  # The name of the theme you're using
+theme = "papermodx"  # The name of the theme you're using
 
 googleAnalytics = "G-0Z1CB301MH"
 
