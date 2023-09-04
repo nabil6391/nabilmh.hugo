@@ -90,10 +90,22 @@ hideSummary = false
 showtoc = true
 tocopen = true
 
-[[params.socialIcons]]
  [[params.socialIcons]]
  name = "github"
- url = "https://github.com/"
+ url = "https://github.com/nabil6391"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/nabil6391/"
+
+  [[params.socialIcons]]
+  name = "youtube"
+  url = "https://www.youtube.com/@techtalkwithnabil"
+
+    [[params.socialIcons]]
+  name = "medium"
+  url = "https://nabil6391.medium.com/"
+
 
 
 images = [ "papermod-cover.png" ]
@@ -113,10 +125,19 @@ images = [ "papermod-cover.png" ]
     url = "tags"
 
   [params.homeInfoParams]
-  Title = "PaperMod"
+  Title = "Hi there 👋"
   Content = """
-Welcome to demo of hugo's theme PaperMod.
-- **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-- Do give a 🌟 on Github !
-- PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+**Senior Software Engineer** with 8+ years of experience. 📱
+- Built 20+ apps, with one having 650k monthly users: [**Quran App**](https://gtaf.org/)
+- Expertise in: 
+  - Android (Java & Kotlin)
+  - Flutter (Dart) 🚀
+  - Frontend (Reactjs) & Backend (Node.js, Golang) 🛠️
+- Authored 📚:
+  - [**Graphview Flutter Library**](https://pub.dev/packages/graphview)
+  - [**LottieSwipeRefreshLayout**](https://github.com/nabil6391/LottieSwipeRefreshLayout)
+- Writings ✒️: [**Medium**](https://nabil6391.medium.com/)
+- Video: [**Youtube**](https://www.youtube.com/@techtalkwithnabil) 
+- Keen on AI 🤖, especially speech-to-text and face detection.
+- Passionate about product development 🚀, data analysis 📊, and leadership 🎖️.
 """
